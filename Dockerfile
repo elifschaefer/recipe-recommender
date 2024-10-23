@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 #install any needed packages
-RUN pip install --no-cache-dir requests
+RUN pip install --no-cache-dir requests flask
 
 #make port 5000 available to the world outside this container
 EXPOSE 5000
